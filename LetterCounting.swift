@@ -40,4 +40,9 @@ class Solution {
 
         return lowString.components(separatedBy: lowChar).count - 1
     }
+
+    //  Solution with filter
+    func countingWithFilter(_ string: String, _ char: Character) -> Int {
+        string.lowercased().filter { $0 == Character(String(char).lowercased()) }.count
+    }
 }
