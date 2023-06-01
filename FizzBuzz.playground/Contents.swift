@@ -39,3 +39,28 @@ func printFizzBuzzSwithch() {
 }
 
 //printFizzBuzzSwithch()
+
+func printFizzBuzzLeetCodeSolution() {
+
+    var answer = [String]()
+
+    for i in 1...100 {
+
+        var currentStr = ""
+
+        if i % 3 == 0 {
+            currentStr += "Fizz"
+        }
+
+        if i % 5 == 0 {
+            currentStr += "Buzz"
+        }
+
+        if currentStr == "" {
+            currentStr += String(i)
+        }
+        answer.append(currentStr)
+    }
+
+    print(answer)
+}
